@@ -1,0 +1,16 @@
+<ion-view view-title="Map">
+  <ion-content class="has-header">
+    <div data-tap-disable="true" id="map_canvas">        
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        </ui-gmap-google-map>
+        <button class="button button-icon icon ion-ios-navigate leftbottom" ng-click="locate()"></button>
+        <div style="position:absolute; right:0px; bottom:0px;">
+        <a ng-href="tel: 01047583951" class="button button-light"> <img src="img/phonecall.png" width = "50" height = "50"></a>
+        </div>
+
+        <div style="position:absolute; left:0px; bottom:0px;">
+          <button class="button button-icon icon ion-pin-outline" icon-on="ion-pin">
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
